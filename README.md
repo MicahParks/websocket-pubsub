@@ -38,7 +38,8 @@ Clients exclusively communicate through
 allowed: JSON, protobuf, gob, etc. The Go datatype used is `[]byte`.
 
 The examples below do not cover some more advanced use cases. Using the `clients.Options` data structure, a client name
-can be specified, as well as custom websocket dialer or initial headers to the dialing request.
+can be specified, as well as custom websocket dialer or initial headers to the dialing request. Each client is assigned
+a UUID on the pubsub server side to uniquely identify clients in the logs.
 
 Full publisher example:
 ```go
