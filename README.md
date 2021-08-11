@@ -37,6 +37,9 @@ Clients exclusively communicate through
 [HTTP websocket binary messages](https://datatracker.ietf.org/doc/html/rfc6455#section-5.6). This means any encoding is
 allowed: JSON, protobuf, gob, etc. The Go datatype used is `[]byte`.
 
+The examples below do not cover some more advanced use cases. Using the `clients.Options` data structure, a client name
+can be specified, as well as custom websocket dialer or initial headers to the dialing request.
+
 Full publisher example:
 ```go
 package main

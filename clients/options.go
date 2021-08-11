@@ -7,9 +7,9 @@ import (
 	"github.com/gorilla/websocket"
 )
 
-// ClientOptions represents information used to connect a publisher or subscriber to a subscription that already has
+// Options represents information used to connect a publisher or subscriber to a subscription that already has
 // default values.
-type ClientOptions struct {
+type Options struct {
 
 	// ClientName is the name of the client's program. It is used in the ClientNameHeader HTTP header.
 	ClientName string
@@ -27,9 +27,9 @@ type ClientOptions struct {
 	WebsocketDialer *websocket.Dialer
 }
 
-// FlattenClientOptions takes in a slice of ClientOptions, uses the highest index of their fields' values to create one
-// ClientOptions.
-func FlattenClientOptions(options []ClientOptions) (option ClientOptions) {
+// FlattenClientOptions takes in a slice of Options, uses the highest index of their fields' values to create one
+// Options.
+func FlattenClientOptions(options []Options) (option Options) {
 	for _, opt := range options {
 		if opt.ClientName != "" {
 			option.ClientName = opt.ClientName

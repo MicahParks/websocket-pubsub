@@ -35,7 +35,7 @@ type Publisher struct {
 }
 
 // New creates a new Publisher. The given ctx is used to close the goroutines launched from this function call.
-func New(ctx context.Context, u *url.URL, options ...clients.ClientOptions) (publisher *Publisher, resp *http.Response, err error) {
+func New(ctx context.Context, u *url.URL, options ...clients.Options) (publisher *Publisher, resp *http.Response, err error) {
 
 	// Flatten the options.
 	option := clients.FlattenClientOptions(options)

@@ -42,7 +42,7 @@ type Subscriber struct {
 }
 
 // New creates a new pubsub.Subscriber. The given ctx is used to close the goroutines launched from this function call.
-func New(ctx context.Context, messages chan []byte, u *url.URL, options ...clients.ClientOptions) (subscriber *Subscriber, resp *http.Response, err error) {
+func New(ctx context.Context, messages chan []byte, u *url.URL, options ...clients.Options) (subscriber *Subscriber, resp *http.Response, err error) {
 
 	// Flatten the options.
 	option := clients.FlattenClientOptions(options)
