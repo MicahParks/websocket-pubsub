@@ -37,7 +37,7 @@ func WebSocketHandler(ctx context.Context, options ...Options) http.HandlerFunc 
 	return func(writer http.ResponseWriter, req *http.Request) {
 
 		// Get the subscription topic.
-		subscriptionTopic := req.URL.Path
+		subscriptionTopic := req.URL.EscapedPath()
 
 		// Get the client type from the header.
 		isPublisher := false
