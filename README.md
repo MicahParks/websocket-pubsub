@@ -191,3 +191,6 @@ The amount of memory this test consumes scales greatly with:
 * This test pretty much keeps _everything_ in memory until the test is over. This includes a bunch of copies of the test
   data. Be careful not to run out of memory. The defaults should be safe for most machines.
 * The number of publishers and subscribers is configurable through flags.
+
+### Test coverage
+This one test covers 76.4% of the code. Additional tests are welcome in contributions.
