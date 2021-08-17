@@ -9,7 +9,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/MicahParks/pubsub"
+	"github.com/MicahParks/websocket-pubsub"
 )
 
 func main() {

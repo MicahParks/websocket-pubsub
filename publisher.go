@@ -7,7 +7,7 @@ import (
 	"github.com/gorilla/websocket"
 	uuid "github.com/satori/go.uuid"
 
-	"github.com/MicahParks/pubsub/clients"
+	"github.com/MicahParks/websocket-pubsub/clients"
 )
 
 // publisher holds all the required information for a publisher to the pubsub system.

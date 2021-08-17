@@ -7,7 +7,7 @@ import (
 	"github.com/gorilla/websocket"
 	uuid "github.com/satori/go.uuid"
 
-	"github.com/MicahParks/pubsub/clients"
+	"github.com/MicahParks/websocket-pubsub/clients"
 )
 
 // subscriber holds all the required information for a subscriber to the pubsub system.

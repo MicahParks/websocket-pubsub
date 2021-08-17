@@ -8,9 +8,9 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/MicahParks/pubsub/clients"
-	"github.com/MicahParks/pubsub/pubclient"
-	"github.com/MicahParks/pubsub/subclient"
+	"github.com/MicahParks/websocket-pubsub/clients"
+	"github.com/MicahParks/websocket-pubsub/pubclient"
+	"github.com/MicahParks/websocket-pubsub/subclient"
 )
 
 // subscriptionCountdown holds a subscription and a waitgroup for it. When the waitgroup is done, the subscription is

@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/MicahParks/pubsub/env"
-	"github.com/MicahParks/pubsub/subclient"
+	"github.com/MicahParks/websocket-pubsub/env"
+	"github.com/MicahParks/websocket-pubsub/subclient"
 )
 
 func main() {

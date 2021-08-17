@@ -21,9 +21,9 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/MicahParks/pubsub"
-	"github.com/MicahParks/pubsub/pubclient"
-	"github.com/MicahParks/pubsub/subclient"
+	"github.com/MicahParks/websocket-pubsub"
+	"github.com/MicahParks/websocket-pubsub/pubclient"
+	"github.com/MicahParks/websocket-pubsub/subclient"
 )
 
 // TestWebSocketHandler will perform a full test of the server with publisher and subscriber clients using data in

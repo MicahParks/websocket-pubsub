@@ -5,7 +5,7 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/MicahParks/pubsub/clients"
+	"github.com/MicahParks/websocket-pubsub/clients"
 )
 
 const (
