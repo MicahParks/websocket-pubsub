@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/MicahParks/pubsub)](https://goreportcard.com/report/github.com/MicahParks/pubsub) [![Go Reference](https://pkg.go.dev/badge/github.com/MicahParks/pubsub.svg)](https://pkg.go.dev/github.com/MicahParks/pubsub)
+[![Go Report Card](https://goreportcard.com/badge/github.com/MicahParks/websocket-pubsub)](https://goreportcard.com/report/github.com/MicahParks/websocket-pubsub) [![Go Reference](https://pkg.go.dev/badge/github.com/MicahParks/websocket-pubsub.svg)](https://pkg.go.dev/github.com/MicahParks/websocket-pubsub)
 
 # pubsub
 
@@ -22,7 +22,7 @@ The websocket package used is [`github.com/gorilla/websocket`](https://github.co
 ## Deploying the server
 
 For Dockerized deployments the pre-built image is available
-at [on DockerHub](https://hub.docker.com/repository/docker/micahparks/pubsub) using this path: `micahparks/pubsub`. The
+at [on DockerHub](https://hub.docker.com/repository/docker/micahparks/websocket-pubsub) using this path: `micahparks/websocket-pubsub`. The
 `Dockerfile` is also included in the root directory of this project.
 
 Environment variables:
@@ -49,8 +49,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/MicahParks/pubsub/env"
-	"github.com/MicahParks/pubsub/pubclient"
+	"github.com/MicahParks/websocket-pubsub/env"
+	"github.com/MicahParks/websocket-pubsub/pubclient"
 )
 
 func main() {
@@ -98,8 +98,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/MicahParks/pubsub/env"
-	"github.com/MicahParks/pubsub/subclient"
+	"github.com/MicahParks/websocket-pubsub/env"
+	"github.com/MicahParks/websocket-pubsub/subclient"
 )
 
 func main() {
