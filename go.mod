@@ -1,4 +1,4 @@
-module github.com/MicahParks/pubsub
+module github.com/MicahParks/websocket-pubsub
 
 go 1.13
 
