@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
+	"github.com/gofrs/uuid"
 	"github.com/gorilla/websocket"
-	uuid "github.com/satori/go.uuid"
 
 	"github.com/MicahParks/websocket-pubsub/clients"
 )
