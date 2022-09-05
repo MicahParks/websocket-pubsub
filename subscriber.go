@@ -117,7 +117,7 @@ func (s *subscriber) writePump() {
 
 	// Create a ping ticker for pinging the subscriber in regular intervals.
 	pingTicker := time.NewTicker(time.Duration(float64(s.pongDeadline) * pingRatio))
-	pingTicker.Stop()
+	defer pingTicker.Stop()
 
 	// Write messages to the subscriber until it is closed.
 	var err error

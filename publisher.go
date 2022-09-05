@@ -133,7 +133,7 @@ func (p *publisher) writePump() {
 
 	// Create a ping ticker for pinging the publisher in regular intervals.
 	pingTicker := time.NewTicker(time.Duration(float64(p.pongDeadline) * pingRatio))
-	pingTicker.Stop()
+	defer pingTicker.Stop()
 
 	// Write messages to the subscriber until it is closed.
 	var err error
